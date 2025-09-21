@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Sitemap: https://stakestrat.com/sitemap.xml
+
+# Specific crawling instructions for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block access to admin or internal directories (if any exist in future)
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/internal/
