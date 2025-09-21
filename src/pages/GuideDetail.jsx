@@ -72,9 +72,9 @@ export default function GuideDetailPage() {
                             {guide.category}
                         </div>
                         
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-6 leading-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-6 leading-tight">
                             {guide.title}
-                        </h1>
+                        </h2>
                         
                         <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
                             {guide.summary}

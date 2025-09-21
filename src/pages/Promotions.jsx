@@ -33,9 +33,9 @@ export default function PromotionsPage() {
         <div className="bg-gray-50 py-12 sm:py-20">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                  <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
                         Latest Crypto Casino Promotions
-                    </h1>
+                    </h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
                         Curated offers and bonuses from top-rated platforms. Perfect for testing your StakeStrat strategies.
                     </p>

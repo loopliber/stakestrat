@@ -66,11 +66,11 @@ export default function Home() {
   return (
     <div className="bg-gray-50">
       <Helmet>
-        <title>Free Stake & Rainbet Calculator - Dice, Crash & Plinko Simulator</title>
+        <title>Free Stake & Rainbet Calculators - Crypto & Dice Strategy Tools</title>
         <meta name="description" content="Best free Stake dice calculator and Rainbet calculator tools. Professional crypto casino simulators for dice strategy, crash games, Plinko, and more. No signup required." />
         <meta name="keywords" content="stake dice calculator free, rainbet dice calculator, stake crash simulator, rainbet calculator, crypto dice strategy, stake dice bot, rainbet demo mode" />
         <link rel="canonical" href="https://stakestrat.com/" />
-        <meta property="og:title" content="Free Stake & Rainbet Calculator - Crypto Casino Strategy Tools" />
+        <meta property="og:title" content="Free Stake & Rainbet Calculators - Crypto & Dice Strategy Tools" />
         <meta property="og:description" content="Professional Stake dice calculator and Rainbet calculator. Free crypto casino simulators for optimal strategy development." />
         <meta property="og:url" content="https://stakestrat.com/" />
         <meta property="og:type" content="website" />
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
             
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tighter mb-6">
-            Free Stake &amp; Rainbet Calculator - Dice, Crash &amp; Plinko Simulator
+            Free Stake &amp; Rainbet Calculators - Crypto &amp; Dice Strategy Tools
           </h1>
             
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto">

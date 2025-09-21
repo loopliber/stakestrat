@@ -48,9 +48,9 @@ export default function GuidesPage() {
                         <BookOpen className="w-4 h-4 mr-2" />
                         <span>Stake & Rainbet Strategy Guides</span>
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
                         Free Stake Dice Strategy & Rainbet Gaming Guides
-                    </h1>
+                    </h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
                         Master <strong>Stake dice strategy</strong> and <strong>Rainbet gaming</strong> with our comprehensive guides. Learn advanced <strong>crypto casino strategies</strong>, risk management, and mathematical approaches for <strong>Stake</strong> and <strong>Rainbet</strong> games.
                     </p>

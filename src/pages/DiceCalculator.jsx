@@ -454,9 +454,9 @@ export default function DiceCalculator() {
             <Dice1 className="w-4 h-4 mr-2" />
             <span>Free Stake & Rainbet Dice Calculator</span>
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-3">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-3">
             Best Stake Dice Calculator Free - Rainbet Dice Strategy Simulator
-          </h1>
+          </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Professional <strong>Stake dice calculator free</strong> tool and <strong>Rainbet dice calculator</strong>. Advanced <strong>crypto dice strategy</strong> simulator with <strong>Martingale calculator</strong>, risk analysis, and real-time probability calculations. No signup required - start optimizing your <strong>Stake dice strategy</strong> now.
           </p>
