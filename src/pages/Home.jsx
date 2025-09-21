@@ -1,0 +1,220 @@
+
+import React from "react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
+import { Dice1, TrendingUp, Target, Zap, ArrowRight, Shield, BarChart3, PieChart } from "lucide-react";
+
+export default function Home() {
+  const games = [
+    {
+      title: "Dice Calculator",
+      subtitle: "Martingale & Probability",
+      description: "Advanced probability calculations and martingale strategy analysis for dice.",
+      icon: Dice1,
+      url: createPageUrl("DiceCalculator"),
+      color: "text-blue-500",
+      bgColor: "bg-blue-50",
+    },
+    {
+      title: "Crash Simulator",
+      subtitle: "Real-time Strategy",
+      description: "Live crash game simulation with auto-cashout optimization and backtesting.",
+      icon: TrendingUp,
+      url: createPageUrl("CrashSimulator"),
+      color: "text-green-500",
+      bgColor: "bg-green-50",
+    },
+    {
+      title: "Plinko Simulator",
+      subtitle: "Physics Engine",
+      description: "Realistic Plinko physics with comprehensive payout analysis and risk levels.",
+      icon: Target,
+      url: createPageUrl("PlinkoSimulator"),
+      color: "text-purple-500",
+      bgColor: "bg-purple-50",
+    },
+    {
+      title: "Limbo Calculator",
+      subtitle: "House Edge Analysis",
+      description: "Mathematical modeling for under/over betting strategies in Limbo.",
+      icon: Zap,
+      url: createPageUrl("LimboCalculator"),
+      color: "text-orange-500",
+      bgColor: "bg-orange-50",
+    }
+  ];
+
+  const features = [
+    {
+      icon: Shield,
+      title: "Mathematically Precise",
+      description: "All calculations are based on proven mathematical models and probability theory."
+    },
+    {
+      icon: BarChart3,
+      title: "Real-time Analysis",
+      description: "Live simulations and instant strategy feedback for optimal decision making."
+    },
+    {
+      icon: PieChart,
+      title: "Comprehensive Tools",
+      description: "Enterprise-level tools designed for serious strategy development and risk assessment."
+    }
+  ];
+
+  return (
+    <div className="bg-gray-50">
+      {/* SEO Schema for Home Page */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "StakeStrat - Crypto Casino Strategy Calculators",
+          "description": "Professional crypto casino strategy calculators and gambling guides for crypto games including Dice, Crash, Plinko, Limbo, and more.",
+          "url": "https://stakestrat.com",
+          "mainEntity": {
+            "@type": "SoftwareApplication",
+            "name": "StakeStrat Calculator Suite",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://stakestrat.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        })}
+      </script>
+
+      {/* Hero Section */}
+      <section className="px-4 py-24 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-100 text-blue-600 font-semibold text-sm mb-6">
+            Professional Strategy Tools
+          </div>
+            
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tighter mb-6">
+            Advanced Crypto Casino Strategy Calculators &amp; Betting Tips
+          </h1>
+            
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+            Master crypto casino games with our professional-grade calculators and strategy guides. Test strategies, analyze probabilities, and optimize your approach with mathematical precision. Free tools for <strong>Dice</strong>, <strong>Crash</strong>, <strong>Plinko</strong>, <strong>Limbo</strong>, and more.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link to={createPageUrl("DiceCalculator")}>
+              <button className="w-full sm:w-auto px-8 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-lg">
+                Start Calculating
+                <ArrowRight className="ml-2 w-4 h-4 inline" />
+              </button>
+            </Link>
+            <Link to="#features">
+              <button className="w-full sm:w-auto px-8 py-3 bg-white text-gray-700 font-semibold rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors duration-300">
+                View Features
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="px-4 pb-24 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight mb-4">
+              Why Choose StakeStrat Calculators?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Professional-grade tools built with mathematical precision for serious strategy development.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            {features.map((feature, index) => (
+              <div key={index} className="p-6">
+                <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-4 mx-auto border border-gray-200">
+                  <feature.icon className="w-6 h-6 text-gray-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">{feature.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Games Grid */}
+      <section className="px-4 pb-24 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight mb-4">
+              Free Crypto Casino Calculators &amp; Strategy Tools
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Each calculator is engineered with mathematical precision and real-time analysis capabilities. Perfect for developing and testing your <strong>crypto casino strategies</strong>.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {games.map((game, index) => (
+              <Link 
+                to={game.url} 
+                key={index} 
+                className="block bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                title={`${game.title} - Free Crypto Calculator`}
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
+                      {game.title}
+                    </h3>
+                    <p className="text-gray-500 font-medium text-sm">{game.subtitle}</p>
+                  </div>
+                  <div className={`w-12 h-12 rounded-lg ${game.bgColor} flex items-center justify-center`}>
+                    <game.icon className={`w-6 h-6 ${game.color}`} />
+                  </div>
+                </div>
+
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {game.description}
+                </p>
+
+                <div className="font-semibold text-sm text-blue-600 flex items-center">
+                  Launch Calculator
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="px-4 pb-24 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-white rounded-2xl p-12 text-center border border-gray-200">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+              Master Crypto Casino Games with Professional Strategy Development
+            </h2>
+            <div className="prose prose-lg max-w-4xl mx-auto text-left">
+              <p className="text-gray-600 leading-relaxed">
+                StakeStrat provides the most comprehensive suite of <strong>crypto casino calculators</strong> and strategy tools available online. Our advanced <strong>crypto dice calculators</strong>, 
+                <strong> crash game analyzers</strong>, <strong> Plinko simulators</strong>, and <strong> Limbo optimization tools</strong> are built for serious gamblers who want to understand the mathematics behind their games.
+              </p>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                Whether you're developing <strong>martingale strategies</strong>, analyzing <strong>probability calculations</strong>, optimizing <strong>house edge scenarios</strong>, or implementing advanced <strong>risk management techniques</strong>, our tools provide the mathematical foundation you need to make informed decisions.
+              </p>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                All calculators are 100% free and built with mobile-first design for optimal performance on any device. Start with our <strong>crypto dice strategy calculator</strong> or explore our complete suite of professional gambling tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
