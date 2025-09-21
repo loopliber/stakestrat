@@ -99,11 +99,11 @@ export default function Home() {
           </div>
             
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tighter mb-6">
-            Advanced Crypto Casino Strategy Calculators &amp; Betting Tips
+            Free Stake &amp; Rainbet Calculator - Dice, Crash &amp; Plinko Simulator
           </h1>
             
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
-            Master crypto casino games with our professional-grade calculators and strategy guides. Test strategies, analyze probabilities, and optimize your approach with mathematical precision. Free tools for <strong>Dice</strong>, <strong>Crash</strong>, <strong>Plinko</strong>, <strong>Limbo</strong>, and more.
+            Professional <strong>Stake dice calculator</strong> and <strong>Rainbet calculator</strong> tools. Free crypto casino simulators for <strong>Stake</strong> and <strong>Rainbet</strong> games including <strong>dice strategy</strong>, <strong>crash simulator</strong>, and <strong>Plinko calculator</strong>. No signup required - start calculating your winning strategies now.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -127,10 +127,10 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight mb-4">
-              Why Choose StakeStrat Calculators?
+              Why Choose Our Stake &amp; Rainbet Calculator Tools?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Professional-grade tools built with mathematical precision for serious strategy development.
+              Professional <strong>crypto casino calculators</strong> built with mathematical precision for <strong>Stake</strong> and <strong>Rainbet</strong> strategy development.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -189,6 +189,55 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stake & Rainbet Specific Section */}
+      <section className="px-4 pb-24 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-12 border border-blue-100">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
+              Best Stake &amp; Rainbet Calculator Tools - Free Dice &amp; Crash Simulators
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">🎲 Stake Dice Calculator Free</h3>
+                <ul className="text-gray-600 space-y-2 text-sm">
+                  <li>• <strong>Stake dice calculator app</strong> - No download required</li>
+                  <li>• <strong>Best stake dice calculator</strong> with real-time probability analysis</li>
+                  <li>• <strong>Stake dice strategy</strong> optimization tools</li>
+                  <li>• <strong>Stake dice simulator</strong> for risk-free testing</li>
+                  <li>• Advanced <strong>stake dice bot</strong> strategy planning</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl border border-gray-200">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">🌧️ Rainbet Calculator Free</h3>
+                <ul className="text-gray-600 space-y-2 text-sm">
+                  <li>• <strong>Rainbet dice calculator free</strong> - Professional tools</li>
+                  <li>• <strong>Rainbet demo mode</strong> strategy development</li>
+                  <li>• <strong>Rainbet Plinko</strong> optimization calculator</li>
+                  <li>• <strong>Rainbet sign up bonus</strong> strategy guides</li>
+                  <li>• Where <strong>Rainbet legal</strong> information and guides</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="text-center mt-8">
+              <p className="text-gray-600 mb-6">
+                Trusted by thousands of crypto casino players. Featured on <strong>Reddit</strong> gambling communities and casino forums.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Link to={createPageUrl("DiceCalculator")} className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                  Try Stake Dice Calculator
+                </Link>
+                <Link to={createPageUrl("Reviews")} className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors">
+                  Compare Rainbet vs Stake
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

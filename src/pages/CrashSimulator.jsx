@@ -169,13 +169,13 @@ export default function CrashSimulator() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-green-100 text-green-600 font-semibold text-sm mb-4">
             <TrendingUp className="w-4 h-4 mr-2" />
-            <span>Crash Game Simulator</span>
+            <span>Free Stake & Rainbet Crash Simulator</span>
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-3">
-            Real-time Crash Simulator
+            Stake Crash Calculator - Free Rainbet Crash Game Simulator
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Advanced crash game simulation with strategy testing and manual cash-out control.
+            Professional <strong>Stake crash simulator</strong> and <strong>Rainbet crash calculator</strong>. Test your <strong>crypto crash strategies</strong> with real-time multiplier tracking, auto-cashout features, and risk analysis. Perfect for <strong>Stake</strong> and <strong>Rainbet</strong> crash game preparation.
           </p>
         </div>
 
