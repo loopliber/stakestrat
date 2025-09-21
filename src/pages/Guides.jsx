@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 
 const ArticleCard = ({ item, type }) => (
   <Link 
-    to={createPageUrl(`${type}Detail?slug=${item.slug}`)} 
+    to={`/guide/${item.slug}`} 
     className="block bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
   >
     <div className="flex flex-col sm:flex-row items-start gap-6">

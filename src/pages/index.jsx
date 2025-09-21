@@ -115,7 +115,7 @@ function PagesContent() {
                 
                 <Route path="/Guides" element={<Guides />} />
                 
-                <Route path="/GuideDetail" element={<GuideDetail />} />
+                <Route path="/guide/:slug" element={<GuideDetail />} />
                 
                 <Route path="/Reviews" element={<Reviews />} />
                 

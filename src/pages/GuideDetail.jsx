@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { getGuideBySlug } from "@/data/guides";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import ReactMarkdown from 'react-markdown';
 import { ArrowLeft, User, Calendar, Shield, Clock, BookOpen } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function GuideDetailPage() {
     const [guide, setGuide] = useState(null);
     const [loading, setLoading] = useState(true);
+    const { slug } = useParams();
 
     useEffect(() => {
         const fetchGuide = async () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const slug = urlParams.get('slug');
             if (slug) {
                 setLoading(true);
                 const result = getGuideBySlug(slug);
@@ -23,7 +23,7 @@ export default function GuideDetailPage() {
             }
         };
         fetchGuide();
-    }, []);
+    }, [slug]);
 
     if (loading) {
         return (
@@ -53,10 +53,113 @@ export default function GuideDetailPage() {
 
     return (
         <div className="min-h-screen bg-gray-50">
+            <Helmet>
+                <title>{guide.title} | StakeStrat</title>
+                <meta name="description" content={guide.summary} />
+                <meta name="keywords" content={`${guide.category.toLowerCase()}, stake calculator, crypto casino, gambling strategy, ${guide.slug.replace(/-/g, ' ')}`} />
+                
+                {/* SEO-friendly canonical URL */}
+                <link rel="canonical" href={`https://www.stakestrat.com/guide/${guide.slug}`} />
+                
+                {/* Open Graph tags */}
+                <meta property="og:title" content={guide.title} />
+                <meta property="og:description" content={guide.summary} />
+                <meta property="og:url" content={`https://www.stakestrat.com/guide/${guide.slug}`} />
+                <meta property="og:type" content="article" />
+                <meta property="og:image" content={guide.featuredImage || "https://www.stakestrat.com/og-image.jpg"} />
+                <meta property="og:site_name" content="StakeStrat" />
+                
+                {/* Twitter Card tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={guide.title} />
+                <meta name="twitter:description" content={guide.summary} />
+                <meta name="twitter:image" content={guide.featuredImage || "https://www.stakestrat.com/og-image.jpg"} />
+                
+                {/* Article-specific meta tags */}
+                <meta property="article:published_time" content={guide.publishedDate} />
+                <meta property="article:author" content="StakeStrat Team" />
+                <meta property="article:section" content={guide.category} />
+                <meta property="article:tag" content="stake calculator" />
+                <meta property="article:tag" content="crypto casino" />
+                <meta property="article:tag" content="gambling strategy" />
+                
+                {/* JSON-LD structured data */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": guide.title,
+                        "description": guide.summary,
+                        "image": guide.featuredImage || "https://www.stakestrat.com/og-image.jpg",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "StakeStrat Team"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "StakeStrat",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://www.stakestrat.com/logo.png"
+                            }
+                        },
+                        "datePublished": guide.publishedDate,
+                        "dateModified": guide.publishedDate,
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": `https://www.stakestrat.com/guide/${guide.slug}`
+                        },
+                        "articleSection": guide.category,
+                        "keywords": `${guide.category.toLowerCase()}, stake calculator, crypto casino, gambling strategy`
+                    })}
+                </script>
+                
+                {/* Breadcrumb structured data */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://www.stakestrat.com"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Guides",
+                                "item": "https://www.stakestrat.com/guides"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": guide.title,
+                                "item": `https://www.stakestrat.com/guide/${guide.slug}`
+                            }
+                        ]
+                    })}
+                </script>
+            </Helmet>
+            
             {/* Hero Section */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-100 py-8 sm:py-12">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-6">
+                        {/* Breadcrumb Navigation */}
+                        <nav className="flex items-center text-sm font-medium mb-4" aria-label="Breadcrumb">
+                            <Link to="/" className="text-blue-600 hover:text-blue-700 transition-colors">
+                                Home
+                            </Link>
+                            <span className="mx-2 text-gray-400">/</span>
+                            <Link to={createPageUrl("Guides")} className="text-blue-600 hover:text-blue-700 transition-colors">
+                                Guides
+                            </Link>
+                            <span className="mx-2 text-gray-400">/</span>
+                            <span className="text-gray-600">{guide.title.split(' - ')[0]}...</span>
+                        </nav>
+                        
                         <Link 
                             to={createPageUrl("Guides")} 
                             className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
