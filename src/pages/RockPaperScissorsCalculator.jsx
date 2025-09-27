@@ -150,11 +150,55 @@ export default function RockPaperScissorsCalculator() {
         <div className="text-center mb-12">
           <Hand className="w-12 h-12 mx-auto text-blue-500 mb-4" />
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
-            Crypto Rock Paper Scissors Calculator
+            Best Stake & Rainbet RPS Calculator
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
             Experience the classic game with exponential multipliers! Win consecutive rounds to build massive multipliers up to 1,000,000x your bet.
           </p>
+        </div>
+
+        {/* Compact Dual Platform Banner */}
+        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-lg p-3 mb-6 text-white">
+          <div className="text-center mb-3">
+            <div className="inline-flex items-center px-2 py-1 rounded-full bg-white/20 text-white text-xs font-bold mb-1">
+              🎯 TOP PLATFORMS
+            </div>
+            <h3 className="text-sm font-bold mb-1">Ready to play? Choose your platform:</h3>
+          </div>
+          
+          <div className="grid grid-cols-2 gap-2">
+            {/* Stake.com Card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-md p-2 border border-white/20 text-center">
+              <div className="mb-1">
+                <h4 className="text-sm font-bold text-white">Stake.com</h4>
+                <div className="text-green-300 font-bold text-xs">5% Rakeback</div>
+              </div>
+              <a
+                href="https://stake.com/?c=aqTVKbe1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-1.5 bg-white text-blue-600 font-bold rounded text-xs hover:bg-blue-50 transition-all duration-300"
+              >
+                🎲 Play on Stake
+              </a>
+            </div>
+
+            {/* Rainbet Card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-md p-2 border border-white/20 text-center">
+              <div className="mb-1">
+                <h4 className="text-sm font-bold text-white">Rainbet</h4>
+                <div className="text-green-300 font-bold text-xs">100% Bonus</div>
+              </div>
+              <a
+                href="https://rainbet.com/?r=stakestrat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-1.5 bg-white text-purple-600 font-bold rounded text-xs hover:bg-purple-50 transition-all duration-300"
+              >
+                🌧️ Play on Rainbet
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
