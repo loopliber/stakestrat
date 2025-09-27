@@ -172,11 +172,108 @@ export default function CrashSimulator() {
             <span>Free Stake & Rainbet Crash Simulator</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-3">
-            Stake Crash Calculator - Free Rainbet Crash Game Simulator
+            Stake & Rainbet Crash Predictor - Crash Game Simulator
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Professional <strong>Stake crash simulator</strong> and <strong>Rainbet crash calculator</strong>. Test your <strong>crypto crash strategies</strong> with real-time multiplier tracking, auto-cashout features, and risk analysis. Perfect for <strong>Stake</strong> and <strong>Rainbet</strong> crash game preparation.
           </p>
+        </div>
+
+        {/* Dual Platform Promotion Banner */}
+        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-2xl p-6 mb-12 text-white">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white text-sm font-bold mb-3">
+              🎯 OUR TOP RECOMMENDED PLATFORMS
+            </div>
+            <h2 className="text-2xl lg:text-3xl font-bold mb-2">Ready to Test Your Crash Strategies?</h2>
+            <p className="text-blue-100 max-w-2xl mx-auto">
+              Perfect your strategy with our calculator, then play on these trusted crypto casinos
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            {/* Stake.com Card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="flex items-center justify-between mb-3">
+                <div>
+                  <h3 className="text-xl font-bold text-white">Stake.com</h3>
+                  <p className="text-blue-100 text-sm">Original Crypto Casino</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-green-300 font-bold">5% Rakeback</div>
+                  <div className="text-blue-200 text-xs">VIP Program</div>
+                </div>
+              </div>
+              
+              <div className="space-y-1 mb-4 text-sm">
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Guaranteed rakeback rewards
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Original crash game
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Proven since 2017
+                </div>
+              </div>
+              
+              <a
+                href="https://stake.com/?c=aqTVKbe1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-2.5 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-all duration-300 text-center text-sm"
+              >
+                🎲 Play on Stake
+              </a>
+            </div>
+
+            {/* Rainbet Card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="flex items-center justify-between mb-3">
+                <div>
+                  <h3 className="text-xl font-bold text-white">Rainbet</h3>
+                  <p className="text-blue-100 text-sm">Fast & Modern</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-green-300 font-bold">100% Bonus</div>
+                  <div className="text-blue-200 text-xs">+ 20 Freespins</div>
+                </div>
+              </div>
+              
+              <div className="space-y-1 mb-4 text-sm">
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Instant withdrawals
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  No KYC required
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Modern interface
+                </div>
+              </div>
+              
+              <a
+                href="https://rainbet.com/?r=stakestrat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-2.5 bg-white text-purple-600 font-bold rounded-lg hover:bg-purple-50 transition-all duration-300 text-center text-sm"
+              >
+                🌧️ Play on Rainbet
+              </a>
+            </div>
+          </div>
+          
+          <div className="text-center mt-4">
+            <p className="text-blue-200 text-sm">
+              ⚡ Use our crash simulator to develop strategies, then apply them on these platforms
+            </p>
+          </div>
         </div>
 
         <div className="grid xl:grid-cols-3 gap-8">

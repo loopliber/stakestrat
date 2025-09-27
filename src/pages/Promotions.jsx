@@ -24,7 +24,7 @@ export default function PromotionsPage() {
         platformName: 'Rainbet',
         logoUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop&crop=center',
         rating: 5,
-        bonusInfo: 'Exclusive StakeStrat Welcome Package - Up to 100% Deposit Bonus',
+        bonusInfo: 'Exclusive StakeStrat Welcome Package - 100% Bonus + 20 Freespins',
         affiliateLink: 'https://rainbet.com/?r=stakestrat',
         summary: 'The perfect platform to test your StakeStrat dice strategies with real money. Get exclusive bonuses and start playing immediately.'
     };
@@ -70,7 +70,7 @@ export default function PromotionsPage() {
                                     <div className="space-y-4">
                                         <div className="flex items-center text-gray-700">
                                             <span className="w-3 h-3 bg-green-400 rounded-full mr-3"></span>
-                                            <span className="font-semibold">Up to 100% Deposit Bonus</span>
+                                            <span className="font-semibold">100% Bonus + 20 Freespins</span>
                                         </div>
                                         <div className="flex items-center text-gray-700">
                                             <span className="w-3 h-3 bg-green-400 rounded-full mr-3"></span>

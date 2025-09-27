@@ -455,53 +455,107 @@ export default function DiceCalculator() {
             <span>Free Stake & Rainbet Dice Calculator</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-3">
-            Best Stake Dice Calculator Free - Rainbet Dice Strategy Simulator
+            Best Stake & Rainbet Dice Calculator - Free Crypto Dice Strategy Simulator
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Professional <strong>Stake dice calculator free</strong> tool and <strong>Rainbet dice calculator</strong>. Advanced <strong>crypto dice strategy</strong> simulator with <strong>Martingale calculator</strong>, risk analysis, and real-time probability calculations. No signup required - start optimizing your <strong>Stake dice strategy</strong> now.
           </p>
         </div>
 
-        {/* Rainbet Promotion Banner */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 mb-12 text-white">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/20 text-white text-sm font-semibold mb-3">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Featured Partner
-              </div>
-              <h2 className="text-2xl lg:text-3xl font-bold mb-2">Rainbet Dice Calculator Free - Test Your Strategy</h2>
-              <p className="text-blue-100 mb-4">
-                Perfect your <strong>Rainbet dice strategy</strong> with our free calculator, then play on <strong>Rainbet</strong> - the fastest crypto casino with <strong>Rainbet demo mode</strong>, instant deposits, and provably fair games. Get your <strong>Rainbet sign up bonus</strong> today.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-2 text-sm text-blue-100">
-                <div className="flex items-center">
-                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-                  Instant Crypto Deposits
-                </div>
-                <div className="flex items-center">
-                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-                  Provably Fair Games
-                </div>
-                <div className="flex items-center">
-                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-                  No KYC Required
-                </div>
-              </div>
+        {/* Dual Platform Promotion Banner */}
+        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-2xl p-6 mb-12 text-white">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white text-sm font-bold mb-3">
+              🎯 OUR TOP RECOMMENDED PLATFORMS
             </div>
-            <div className="flex flex-col gap-3">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-2">Ready to Test Your Dice Strategies?</h2>
+            <p className="text-blue-100 max-w-2xl mx-auto">
+              Perfect your strategy with our calculator, then play on these trusted crypto casinos
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            {/* Stake.com Card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="flex items-center justify-between mb-3">
+                <div>
+                  <h3 className="text-xl font-bold text-white">Stake.com</h3>
+                  <p className="text-blue-100 text-sm">Original Crypto Casino</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-green-300 font-bold">5% Rakeback</div>
+                  <div className="text-blue-200 text-xs">VIP Program</div>
+                </div>
+              </div>
+              
+              <div className="space-y-1 mb-4 text-sm">
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Guaranteed rakeback rewards
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Original dice game
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Proven since 2017
+                </div>
+              </div>
+              
+              <a
+                href="https://stake.com/?c=aqTVKbe1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-2.5 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-all duration-300 text-center text-sm"
+              >
+                🎲 Play Dice on Stake
+              </a>
+            </div>
+
+            {/* Rainbet Card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="flex items-center justify-between mb-3">
+                <div>
+                  <h3 className="text-xl font-bold text-white">Rainbet</h3>
+                  <p className="text-blue-100 text-sm">Fast & Modern</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-green-300 font-bold">100% Bonus</div>
+                  <div className="text-blue-200 text-xs">+ 20 Freespins</div>
+                </div>
+              </div>
+              
+              <div className="space-y-1 mb-4 text-sm">
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Instant withdrawals
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  No KYC required
+                </div>
+                <div className="flex items-center text-blue-100">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Demo mode available
+                </div>
+              </div>
+              
               <a
                 href="https://rainbet.com/?r=stakestrat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all duration-300 shadow-lg text-center whitespace-nowrap"
+                className="block w-full py-2.5 bg-white text-purple-600 font-bold rounded-lg hover:bg-purple-50 transition-all duration-300 text-center text-sm"
               >
-                🎲 Play Dice Now
+                �️ Play Dice on Rainbet
               </a>
-              <div className="text-center text-xs text-blue-200">
-                Exclusive StakeStrat bonus available
-              </div>
             </div>
+          </div>
+          
+          <div className="text-center mt-4">
+            <p className="text-blue-200 text-sm">
+              ⚡ Use our dice calculator to develop strategies, then apply them on these platforms
+            </p>
           </div>
         </div>
 
