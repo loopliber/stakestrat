@@ -134,6 +134,109 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Top Crypto Casino Partners Banner */}
+      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-2xl p-8 text-white shadow-2xl">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white text-sm font-bold mb-4">
+                🎯 OUR TOP PLACES TO PLAY WITH HIGHEST RTP
+              </div>
+              <h2 className="text-2xl lg:text-3xl font-bold mb-3">
+                Ready to Apply Your Strategies?
+              </h2>
+              <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+                After perfecting your calculations, play on our trusted partners with the highest RTPs in crypto gambling
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Stake.com Card */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="flex items-center justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">Stake.com</h3>
+                    <p className="text-blue-100 text-sm">Original Crypto Casino</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-green-300 font-bold text-lg">99%+ RTP</div>
+                    <div className="text-blue-200 text-xs">Verified Provably Fair</div>
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-6 text-sm">
+                  <div className="flex items-center text-blue-100">
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                    Instant crypto deposits & withdrawals
+                  </div>
+                  <div className="flex items-center text-blue-100">
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                    Weekly & monthly bonuses
+                  </div>
+                  <div className="flex items-center text-blue-100">
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                    Live chat support 24/7
+                  </div>
+                </div>
+                
+                <a
+                  href="https://stake.com/?c=stakestrat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-all duration-300 text-center shadow-lg"
+                >
+                  🎲 Play on Stake Now
+                </a>
+              </div>
+
+              {/* Rainbet Card */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="flex items-center justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">Rainbet</h3>
+                    <p className="text-blue-100 text-sm">Fast & Modern Casino</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-green-300 font-bold text-lg">98%+ RTP</div>
+                    <div className="text-blue-200 text-xs">Lightning Fast Payouts</div>
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-6 text-sm">
+                  <div className="flex items-center text-blue-100">
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                    No KYC required
+                  </div>
+                  <div className="flex items-center text-blue-100">
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                    Exclusive StakeStrat bonus
+                  </div>
+                  <div className="flex items-center text-blue-100">
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                    Demo mode available
+                  </div>
+                </div>
+                
+                <a
+                  href="https://rainbet.com/?r=stakestrat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-3 bg-white text-purple-600 font-bold rounded-lg hover:bg-purple-50 transition-all duration-300 text-center shadow-lg"
+                >
+                  🌧️ Play on Rainbet Now
+                </a>
+              </div>
+            </div>
+            
+            <div className="text-center mt-6">
+              <p className="text-blue-200 text-sm">
+                ⚡ Use our calculators above to develop strategies, then apply them on these trusted platforms
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="features" className="px-4 pb-24 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
