@@ -33,7 +33,7 @@ export const reviews = [
     logoUrl: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=100&h=100&fit=crop&crop=center",
     rating: 4,
     bonusInfo: "Daily Rakeback + Weekly/Monthly Bonuses",
-    affiliateLink: "https://stake.com/?c=stakestrat",
+    affiliateLink: "https://stake.com/?c=aqTVKbe1",
     summary: "Popular crypto casino with extensive game selection, active community, and regular promotions. Great for high-volume players.",
     pros: [
       "Huge game selection including originals",

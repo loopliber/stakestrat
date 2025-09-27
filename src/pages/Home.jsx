@@ -180,7 +180,7 @@ export default function Home() {
                 </div>
                 
                 <a
-                  href="https://stake.com/?c=stakestrat"
+                  href="https://stake.com/?c=aqTVKbe1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-all duration-300 text-center shadow-lg"
