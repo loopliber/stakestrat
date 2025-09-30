@@ -36,7 +36,7 @@ export default function ReviewsPage() {
         logoUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop&crop=center', // Placeholder, ideally use an actual Rainbet logo
         rating: 5,
         bonusInfo: 'Exclusive StakeStrat Welcome Bonus',
-        affiliateLink: 'https://rainbet.com/?r=stakestrat',
+    affiliateLink: 'https://playrainbet.com/tf1ad404a',
         summary: 'Top-rated crypto casino with instant deposits, provably fair games, and the best dice experience. No KYC required.',
         pros: [
             'Instant crypto deposits and withdrawals',

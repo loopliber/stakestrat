@@ -251,7 +251,7 @@ export default function CrashSimulator() {
               </div>
               
               <a
-                href="https://rainbet.com/?r=stakestrat"
+                href="https://playrainbet.com/tf1ad404a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full py-2 bg-white text-purple-600 font-bold rounded-md hover:bg-purple-50 transition-all duration-300 text-center text-xs"

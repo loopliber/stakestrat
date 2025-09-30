@@ -78,7 +78,7 @@ export default function ArbitrageCalculator() {
                 <div className="text-green-300 font-bold text-xs">100% Bonus</div>
               </div>
               <a
-                href="https://rainbet.com/?r=stakestrat"
+                href="https://playrainbet.com/tf1ad404a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full py-1.5 bg-white text-purple-600 font-bold rounded text-xs hover:bg-purple-50 transition-all duration-300"

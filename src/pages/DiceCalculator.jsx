@@ -495,7 +495,7 @@ export default function DiceCalculator() {
                 <div className="text-green-300 font-bold text-xs">100% Bonus</div>
               </div>
               <a
-                href="https://rainbet.com/?r=stakestrat"
+                href="https://playrainbet.com/tf1ad404a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full py-1.5 bg-white text-purple-600 font-bold rounded text-xs hover:bg-purple-50 transition-all duration-300"
@@ -1049,7 +1049,7 @@ export default function DiceCalculator() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Ready to Play with Real Money?</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  After testing your strategies with our calculator, you can apply them on <a href="https://rainbet.com/?r=stakestrat" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-semibold">Rainbet's Dice game</a>. Rainbet offers one of the most trusted and fastest crypto gambling experiences with:
+                  After testing your strategies with our calculator, you can apply them on <a href="https://playrainbet.com/tf1ad404a" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-semibold">Rainbet's Dice game</a>. Rainbet offers one of the most trusted and fastest crypto gambling experiences with:
                 </p>
                 <ul className="list-disc list-inside space-y-2 pl-4 text-gray-600 mb-6">
                   <li><strong>Instant Deposits:</strong> Start playing immediately with crypto</li>
@@ -1064,7 +1064,7 @@ export default function DiceCalculator() {
                       <p className="text-blue-600 text-sm">Get special bonuses when you sign up through our link</p>
                     </div>
                     <a
-                      href="https://rainbet.com/?r=stakestrat"
+                      href="https://playrainbet.com/tf1ad404a"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"

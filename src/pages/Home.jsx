@@ -218,7 +218,7 @@ export default function Home() {
                 </div>
                 
                 <a
-                  href="https://rainbet.com/?r=stakestrat"
+                  href="https://playrainbet.com/tf1ad404a"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full py-3 bg-white text-purple-600 font-bold rounded-lg hover:bg-purple-50 transition-all duration-300 text-center shadow-lg"
