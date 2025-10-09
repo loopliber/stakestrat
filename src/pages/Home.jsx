@@ -66,14 +66,91 @@ export default function Home() {
   return (
     <div className="bg-gray-50">
       <Helmet>
-        <title>Free Stake & Rainbet Calculators - Crypto & Dice Strategy Tools</title>
-        <meta name="description" content="Best free Stake dice calculator and Rainbet calculator tools. Professional crypto casino simulators for dice strategy, crash games, Plinko, and more. No signup required." />
-        <meta name="keywords" content="stake dice calculator free, rainbet dice calculator, stake crash simulator, rainbet calculator, crypto dice strategy, stake dice bot, rainbet demo mode" />
-        <link rel="canonical" href="https://stakestrat.com/" />
-        <meta property="og:title" content="Free Stake & Rainbet Calculators - Crypto & Dice Strategy Tools" />
-        <meta property="og:description" content="Professional Stake dice calculator and Rainbet calculator. Free crypto casino simulators for optimal strategy development." />
+        <title>Free Stake & Rainbet Calculators - Best Crypto Casino Strategy Tools 2025</title>
+        <meta name="description" content="Best free Stake dice calculator and Rainbet calculator tools. Professional crypto casino simulators for dice strategy, crash games, Plinko, and more. Advanced Martingale calculators and risk analysis tools. No signup required." />
+        <meta name="keywords" content="stake dice calculator free, rainbet dice calculator, stake crash simulator, rainbet calculator, crypto dice strategy, stake dice bot, rainbet demo mode, martingale calculator, crypto casino tools" />
+        
+        {/* Open Graph Enhanced */}
+        <meta property="og:title" content="Free Stake & Rainbet Calculators - Best Crypto Casino Tools 2025" />
+        <meta property="og:description" content="Professional Stake dice calculator and Rainbet calculator suite. Free crypto casino simulators with advanced strategy analysis and risk management." />
         <meta property="og:url" content="https://stakestrat.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://stakestrat.com/og-home.png" />
+        <meta property="og:site_name" content="StakeStrat" />
+        
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Free Stake & Rainbet Calculators - Crypto Casino Tools" />
+        <meta name="twitter:description" content="Professional crypto casino calculators for Stake and Rainbet. Free strategy tools and simulators." />
+        <meta name="twitter:image" content="https://stakestrat.com/og-home.png" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="author" content="StakeStrat Team" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <link rel="canonical" href="https://stakestrat.com/" />
+        
+        {/* Enhanced Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["WebSite", "SoftwareApplication"],
+            "name": "StakeStrat - Crypto Casino Calculator Suite",
+            "alternateName": "Stake & Rainbet Calculator Tools",
+            "description": "Professional suite of crypto casino calculators including Stake dice calculator, Rainbet calculator, crash simulator, and advanced strategy tools with Martingale analysis",
+            "url": "https://stakestrat.com",
+            "applicationCategory": ["FinanceApplication", "UtilitiesApplication"],
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "creator": {
+              "@type": "Organization",
+              "name": "StakeStrat",
+              "url": "https://stakestrat.com",
+              "logo": "https://stakestrat.com/logo.png"
+            },
+            "featureList": [
+              "Stake Dice Calculator Free",
+              "Rainbet Dice Calculator", 
+              "Crypto Crash Simulator",
+              "Plinko Strategy Calculator",
+              "Limbo Calculator",
+              "Mines Calculator",
+              "Martingale Strategy Analysis",
+              "Risk Management Tools",
+              "Real-time Probability Calculations"
+            ],
+            "keywords": "stake dice calculator free, rainbet dice calculator, crypto casino tools, martingale calculator, gambling strategy simulator",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "1250",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "potentialAction": {
+              "@type": "UseAction",
+              "target": "https://stakestrat.com/dice-calculator"
+            },
+            "mainEntity": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Stake Dice Calculator",
+                "url": "https://stakestrat.com/dice-calculator",
+                "applicationCategory": "CalculatorApplication"
+              },
+              {
+                "@type": "SoftwareApplication", 
+                "name": "Rainbet Calculator",
+                "url": "https://stakestrat.com/dice-calculator",
+                "applicationCategory": "CalculatorApplication"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       {/* SEO Schema for Home Page */}

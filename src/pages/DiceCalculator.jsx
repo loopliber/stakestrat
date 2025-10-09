@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import { Helmet } from "react-helmet-async";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Dice1, Calculator, TrendingUp, AlertTriangle, Target, Sparkles, HelpCircle, SlidersHorizontal, Play, Pause, RotateCcw, Download, BarChart3 } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
+import SEORelatedLinks from "@/components/SEORelatedLinks";
 
 export default function DiceCalculator() {
   // Martingale Strategy Settings
@@ -446,7 +448,71 @@ export default function DiceCalculator() {
   const winRate = currentSession.totalBets > 0 ? (currentSession.wins / currentSession.totalBets * 100).toFixed(2) : 0;
 
   return (
-    <div className="min-h-screen px-4 py-12 sm:px-6 lg:px-8 bg-gray-50">
+    <>
+      <Helmet>
+        <title>Best Stake & Rainbet Dice Calculator Free - Crypto Dice Strategy Simulator 2025</title>
+        <meta name="description" content="Professional Stake dice calculator and Rainbet dice calculator with advanced Martingale simulation. Free crypto dice strategy tool with risk analysis, probability calculations, and real-time optimization. No signup required." />
+        <meta name="keywords" content="stake dice calculator free, rainbet dice calculator, crypto dice strategy, martingale calculator, stake dice bot, dice probability calculator, crypto gambling simulator" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Best Stake & Rainbet Dice Calculator Free - Crypto Strategy Tool" />
+        <meta property="og:description" content="Advanced Stake dice calculator and Rainbet dice calculator with Martingale simulation, risk analysis, and strategy optimization." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stakestrat.com/dice-calculator" />
+        <meta property="og:image" content="https://stakestrat.com/og-dice-calculator.png" />
+        
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Stake & Rainbet Dice Calculator - Free Strategy Tool" />
+        <meta name="twitter:description" content="Professional crypto dice calculator with Martingale simulation and risk analysis" />
+        <meta name="twitter:image" content="https://stakestrat.com/og-dice-calculator.png" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://stakestrat.com/dice-calculator" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Stake & Rainbet Dice Calculator",
+            "description": "Professional dice calculator and strategy simulator for Stake and Rainbet crypto casinos with Martingale analysis and risk management tools",
+            "url": "https://stakestrat.com/dice-calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "creator": {
+              "@type": "Organization",
+              "name": "StakeStrat",
+              "url": "https://stakestrat.com"
+            },
+            "featureList": [
+              "Martingale Strategy Simulation",
+              "Risk Analysis Calculator", 
+              "Probability Calculator",
+              "Bankroll Management",
+              "Real-time Strategy Optimization",
+              "Crypto Dice Strategy Development"
+            ],
+            "keywords": "stake dice calculator, rainbet dice calculator, crypto dice strategy, martingale calculator, gambling simulator",
+            "mainEntity": {
+              "@type": "SoftwareApplication",
+              "name": "Crypto Dice Calculator",
+              "applicationCategory": "CalculatorApplication",
+              "operatingSystem": "Any",
+              "permissions": "browser",
+              "memoryRequirements": "Minimal",
+              "storageRequirements": "None"
+            }
+          })}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen px-4 py-12 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -1131,6 +1197,11 @@ export default function DiceCalculator() {
               </div>
             </div>
             
+            {/* Related Calculators for Internal SEO Linking */}
+            <div className="max-w-4xl mx-auto mb-12">
+              <SEORelatedLinks currentPage="dice" />
+            </div>
+            
             <div className="prose prose-lg max-w-4xl mx-auto">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Why Our Dice Calculator is the Best Choice</h3>
               <p className="text-gray-600 mb-4">
@@ -1171,5 +1242,6 @@ export default function DiceCalculator() {
         </div>
       </div>
     </div>
+    </>
   );
 }
